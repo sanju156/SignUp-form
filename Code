@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>
+            Sign Up form
+        </title>
+        <style>
+            #register-form{
+                width: 300px;
+                background-color: white;
+                padding: 24;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .input-label{
+                margin: 0;
+                margin-bottom: 4px;
+                margin-top: 12px;
+            }
+            .input-item{
+                width: 100%;
+            }
+            #terms{
+                margin-top: 20px;
+                margin-bottom: 24px;
+            }
+        </style>
+    </head>
+    <body style="background-color: lightblue;">
+        <h1 style="text-align: center;">Signup</h1>
+        <form id="register-form" method="POST">           
+             <div>
+                <p class="input-label">Full Name: </p>
+                <input class="input-item" type="text" name="Full Name">
+            </div>
+            <div>
+                <p class="input-label">Email:</p>
+                <input class="input-item" type="email" name="Email">
+            </div>
+            <div>
+               <p class="input-label"> Password:</p>
+                <input class="input-item" type="password" name="password">
+            </div>
+            <div>
+               <p class="input-label">Confirm Password:</p>
+                <input class="input-item" type="password" name="confirm password">
+            </div>
+            <div>
+                <p class="input-label">Gender:</p>
+                <input type="radio" name="male" value="male">
+                Male</input>
+
+                <input type="radio" name="female" value="female">
+                Female</input>
+                
+                <input type="radio" name="other" value="other">
+                Other</input>
+            </div>
+            <div>
+                <p class="input-label">Security Question:</p>
+                <select class="input-item" name="security question">
+                 <option value="colour">What is your favourite colour?</option>
+                 <option value="first-job">What was your Job?</option>
+                 <option value="nick-name">What is your nick name?</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="answer" rows="6" cols="39"></textarea>
+            </div>
+            <div>
+                <input id="terms" type="checkbox" name="terms" value="condition">I agree to all terms and conditions.</input>
+            </div>
+            <div>
+                <input type="submit" name="Register" value="Register" >           
+            </div>
+        </form>
+    </body>
+</html>
